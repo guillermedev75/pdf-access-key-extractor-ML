@@ -2,4 +2,3 @@ ml_access_key_extractor.egg-info/
 dist/
 build/
 publish.txt
-setup.py

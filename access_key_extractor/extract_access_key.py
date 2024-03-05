@@ -10,7 +10,7 @@ class ExtractAccessKey:
         self._pdf_path = pdf_path
 
     # Função para extrair texto de um PDF usando pdfplumber
-    def _extract_text_from_pdf(pdf_path):
+    def _extract_text_from_pdf(self, pdf_path):
         with pdfplumber.open(pdf_path) as pdf:
             text = ""
             for page in pdf.pages:
@@ -18,7 +18,7 @@ class ExtractAccessKey:
         return text
 
     # Função para extrair a chave de acesso do texto usando expressões regulares
-    def _extract_chave_acesso(text):
+    def _extract_chave_acesso(self, text):
         # Padrões típicos de chaves de acesso em notas fiscais
         regex_patterns = [
             r"\b\d{44}\b",   # 44 dígitos consecutivos
@@ -32,7 +32,7 @@ class ExtractAccessKey:
             for match in matches:
                 found = True
                 chave_acesso = match.group(0)
-                print(f"Chave de acesso encontrada: {chave_acesso}")
+                print(chave_acesso)
 
         if not found:
             print("Nenhuma correspondência de chave de acesso encontrada.")
