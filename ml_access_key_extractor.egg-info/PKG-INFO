@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ml_access_key_extractor
+Version: 0.0.1
+Summary: Lib to access nf from Jira
+Author: Guillerme Rezende Manhaes
+License: MIT License
+Keywords: nota_fiscal
+Requires-Dist: pdfplumber
+Requires-Dist: scikit-learn>=0.24.0
