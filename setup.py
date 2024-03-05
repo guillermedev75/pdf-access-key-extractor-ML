@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='ml_access_key_extractor',
-    version='0.0.4',
+    version='0.1.0',
     license='MIT License',
     author='Guillerme Rezende Manhaes',
     keywords='nota_fiscal',
